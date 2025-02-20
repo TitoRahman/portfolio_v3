@@ -10,6 +10,11 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        accent: "var(--accent)",
+      },
+      fontFamily: {
+        sans: ["var(--font-inter)"],
+        mono: ["var(--font-roboto-mono)"],
       },
     },
   },
