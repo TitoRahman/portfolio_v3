@@ -1,5 +1,4 @@
 import React from "react";
-import { BsLink } from "react-icons/bs";
 import { GoArrowUpRight } from "react-icons/go";
 
 function ExperienceCard({
@@ -8,7 +7,7 @@ function ExperienceCard({
   title,
   description,
   company,
-  skills,
+  skills = [],
   companySite,
 }) {
   const [isHovered, setIsHovered] = React.useState(false);
@@ -27,7 +26,7 @@ function ExperienceCard({
         </p>
         <div className="flex gap-4 flex-col ">
           <h3
-            className={`transition-all duration-300 ${isHovered ? "text-accent" : "text-white"}`}
+            className={`transition - all duration-300 ${isHovered ? "text-accent" : "text-white"}`}
           >
             <span>{title}</span> <span>&middot;</span> <span>{company}</span>
             <span className={"p-2 "}>
